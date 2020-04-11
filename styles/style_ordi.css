@@ -80,7 +80,7 @@ header nav ul li {
 
 #main {
     position: relative;
-    background: url('https://image.noelshack.com/fichiers/2020/15/6/1586566008-webp-net-resizeimage.jpg');center no-repeat;
+    background: url('https://image.noelshack.com/fichiers/2020/15/6/1586566008-webp-net-resizeimage.jpg') center no-repeat;
     height:100%;
     width:100%;
     z-index: -1;

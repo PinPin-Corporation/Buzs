@@ -7,13 +7,14 @@
     <head>
         <meta charset="utf-8">
         <link href="styles/style_ordi.css" rel="stylesheet">
+        <link href="styles/style_panier.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Crete+Round" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
         <title>Busz - panier</title>
     </head>
     <body>
         <?php include('menu.php');?>
-        <div>
+        <div id="panier_header">
             <h2>Panier</h2>
         </div>
         <div>
