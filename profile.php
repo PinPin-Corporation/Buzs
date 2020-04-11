@@ -29,11 +29,9 @@
             <input type="button" value="Changer votre mot de passe">
         </form>
         <footer>
-
             <div class="wrapper">
             <h1>Busz</h1>
             </div>
-
         </footer>
     </body>
 </html>

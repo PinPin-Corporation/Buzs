@@ -40,11 +40,9 @@
             -->
         </div>
         <footer>
-
             <div class="wrapper">
-            <h1>Busz</h1>
+                <h1>Busz</h1>
             </div>
-
         </footer>
     </body>
 </html>
