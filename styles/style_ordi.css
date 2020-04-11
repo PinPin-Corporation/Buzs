@@ -1,0 +1,94 @@
+
+/* Général */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #494343;
+}
+.wrapper
+{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1 
+{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+ul 
+{
+    list-style: none;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #dddcd2;
+    font-weight:bold;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width:100%;
+    height:100px;
+    background-color: rgb(56, 56, 56);
+    border-bottom: solid #7a1f1f;
+    
+    
+}
+
+#red {
+    color: #7a1f1f;
+}
+
+header h1 
+{
+    margin-top: 30px;
+    margin-left: 25px; 
+    float: left;
+    color: white;
+}
+header nav
+{
+    float: right;
+    margin-top:40px;
+    margin-right: 40px;
+}
+header nav ul li {
+
+    display: inline-block;
+    margin-left:10px;
+    border-bottom: 0px solid #ff8ece;
+    padding-bottom:25px;
+    border-radius:4px;
+    
+
+    
+}
+/* MAIN */
+
+#main {
+    position: relative;
+    background: url('https://www.mvcsc.k12.in.us/docs/_full_/district/2019-2020/e-learning-vector.png?id=8609&thumbwidth=300&fullwidth=500') center no-repeat;
+    height:76%;
+    width:100%;
+    
+}
+
+/* Footer */
+footer {
+    background-color: #d3a769;
+    text-align:center;
+    padding: 40px 0 40px 0;
+    bottom: 0px;
+    width: 100%;
+}
