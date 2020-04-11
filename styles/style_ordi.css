@@ -9,12 +9,7 @@
 body {
     background-color: #494343;
 }
-.wrapper
-{
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
+
 
 h1 
 {
@@ -34,20 +29,27 @@ a{
     font-weight:bold;
 }
 
+h2
+{
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+
+}
 /* HEADER */
 
 header {
     position: fixed;
     width:100%;
     height:100px;
-    background-color: rgb(56, 56, 56);
-    border-bottom: solid #7a1f1f;
+    background-color: rgba(56, 56, 56,0.7);
+    border-bottom: solid #5E3730;
+    z-index: 2;
     
     
 }
 
 #red {
-    color: #7a1f1f;
+    color: #5E3730;
 }
 
 header h1 
@@ -78,15 +80,26 @@ header nav ul li {
 
 #main {
     position: relative;
-    background: url('https://www.mvcsc.k12.in.us/docs/_full_/district/2019-2020/e-learning-vector.png?id=8609&thumbwidth=300&fullwidth=500') center no-repeat;
-    height:76%;
+    background: url('https://www.ecopetit.cat/wpic/mpic/102-1027020_work-in-progress.jpg') center no-repeat;
+    height:100%;
     width:100%;
+    z-index: -1;
     
+}
+
+#main h2 {
+
+    text-transform: uppercase;
+    text-align: center;
+    padding: 260px 0 40px 0;
+    font-weight:normal;
+    font-size: 50px;
 }
 
 /* Footer */
 footer {
-    background-color: #d3a769;
+    border-top: solid #5E3730;
+    background-color: rgb(56, 56, 56);
     text-align:center;
     padding: 40px 0 40px 0;
     bottom: 0px;
