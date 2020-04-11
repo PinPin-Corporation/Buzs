@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    test
     <head>
         <title>Busz - Rechercher</title>
     </head>
