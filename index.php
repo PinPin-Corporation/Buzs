@@ -17,7 +17,7 @@ try
             <p><?php echo $donnees['description'];?></p>
         </div>
     </div>
-    <php
+    <?php
     }
 
     $reponse->closeCursor(); // Termine le traitement de la requête
