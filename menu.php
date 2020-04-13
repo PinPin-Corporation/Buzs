@@ -42,9 +42,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav" id="items">
-          <a class="nav-item nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Article</a>
-          <a class="nav-item nav-link" href="#">Formation</a>
+          <a class="nav-item nav-link active" href="index.php">Accueil <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="articles.php">Articles</a>
+          <a class="nav-item nav-link" href="#">Formations</a>
           <a class="nav-item nav-link" href="#">Contacts</a>
         </div>
       </div>

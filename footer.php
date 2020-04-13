@@ -31,7 +31,7 @@
                               </div>
                               <div class="widget-content">
                                   <ul class="widget-category-listings">
-                                      <li><a href="#">Accueil</a></li>
+                                      <li><a href="index.php">Accueil</a></li>
                                       <li><a href="articles.php">Articles</a></li>
                                       <li><a href="#">Formations</a></li>
                                       <li><a href="#">Contact</a></li>
