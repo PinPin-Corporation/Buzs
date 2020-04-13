@@ -2,7 +2,7 @@
     width: 1000px;
     height: 300px;
     margin: 0 auto;
-    border: 1px solid grey;
+    border-top: 1px solid grey;
 }
 
 #Major_Content_Left{
@@ -18,8 +18,7 @@
 .Minor_Content{
     width: 1000px;
     height: 300px;
-    margin: 0 auto;
-    border: 1px solid grey;
+    border-top: 1px solid grey;
 }
 
 .Minor_Content_Left{

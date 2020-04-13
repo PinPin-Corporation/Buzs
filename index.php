@@ -1,9 +1,10 @@
 <?php include('menu.php') ?>
 
-    <div id="bg">
-
-        <img src="images/caro1.jpg" id="caro" class="img-fluid">
-
+    <div class="">
+        <div class="position-relative text-center text-light" style="top: 0px;">
+            <h1 style="position:absolute; top:45%; width:100%; font-style:italic">"Révélez votre vrai potentiel grâce à la séduction"</h1>
+            <img src="images/caro1.jpg" class="w-100">
+        </div>
     </div>
       <script type="text/javascript">
         $(window).on('load',function(){
@@ -36,29 +37,31 @@
 </div>
 </div>
 </div>
-    <?php
-        try
-        {
-            $bdd = new PDO('mysql:host=localhost;dbname=QueenSeduction;charset=utf8', 'root', '');
-            $reponse = $bdd->query('SELECT * FROM Articles ORDER BY Date DESC');
-            $donnees = $reponse->fetch();
-            ?>
-
-            <div id="Major_Content">
-                    <div id="Major_Content_Left">
-                        <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
-                    </div>
-                    <div id="Major_Content_Right">
-                        <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
-                        <p><?php echo $donnees['description'];?></p>
-                    </div>
-            </div>
-            <?php
-
-            while ($donnees = $reponse->fetch())
+    <div class="container">
+        <?php
+            try
             {
-            ?>
-            <div class="Minor_Content">
+                $bdd = new PDO('mysql:host=localhost;dbname=QueenSeduction;charset=utf8', 'root', '');
+                $reponse = $bdd->query('SELECT * FROM Articles ORDER BY Date DESC');
+                $donnees = $reponse->fetch();
+                ?>
+                <div style="margin-top: 20px; margin-bottom: 20px;">
+                    <div id="Major_Content">
+                            <div id="Major_Content_Left">
+                                <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
+                            </div>
+                            <div id="Major_Content_Right">
+                                <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
+                                <p><?php echo $donnees['description'];?></p>
+                            </div>
+                    </div>
+                </div>
+                <?php
+
+                while ($donnees = $reponse->fetch())
+                {
+                ?>
+                <div class="Minor_Content">
                     <div class="Minor_Content_Left">
                         <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
                     </div>
@@ -66,16 +69,26 @@
                         <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
                         <p><?php echo $donnees['description'];?></p>
                     </div>
-            </div>
-            <?php
-            }
+                </div>
+                <?php
+                }
 
-            $reponse->closeCursor(); // Termine le traitement de la requête
-            }
-        catch (Exception $e)
-        {
-                die('Erreur : ' . $e->getMessage());
-        } 
-    ?>
+                $reponse->closeCursor();
+                }
+            catch (Exception $e)
+            {
+                    die('Erreur : ' . $e->getMessage());
+            } 
+        ?>
+        <div class="Minor_Content" style="margin-bottom : 20px; margin-top: 20px;">
+            <div class="Minor_Content_Left">
+                <a><img src="images/femme_fatale.jpg"></a>
+            </div>
+            <div class="Minor_Content_Right">
+                <h1>Contrôler l'Éjaculation et Durer Longtemps au Lit</h1>
+                <p>Il n’y a pas de remède miracle pour durer plus longtemps au lit ! Être plus performant au lit ne peut ...</p>
+            </div>
+        </div>
+    </div>
     <div id="color">
 <?php include('footer.php'); ?>
