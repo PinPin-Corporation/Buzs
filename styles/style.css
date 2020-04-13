@@ -153,6 +153,21 @@ footer {
     width: 33%;
 }
 
+#red {
+    color: rgb(151, 39, 39);
+    font-size: 25px;
+    font-family: 'Old Standard TT', serif;
+}
+
+a, a:hover, a:visited, a:focus {
+    text-decoration: none !important;
+    color: white;
+}
+
+a:hover {
+    color: rgb(151, 39, 39);
+}
+
 footer .footer-inner .footer-block .footer-widget-content .widget-title h2 {
     overflow: hidden;
     position: relative;
@@ -184,3 +199,5 @@ footer .footer-inner .footer-block .footer-widget-content .widget-title h2:after
     margin-right: -100%;
     margin-left: 10px;
     border-top: 3px solid rgba(255,255,255,0.2);
+
+}
