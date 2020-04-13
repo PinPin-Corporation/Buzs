@@ -1,5 +1,10 @@
 <?php include('menu.php') ?>
 
+    <div id="bg">
+
+        <img src="images/caro1.jpg" id="caro" class="img-fluid">
+
+    </div>
       <script type="text/javascript">
         $(window).on('load',function(){
             $('#exampleModal').modal('show');

@@ -33,7 +33,7 @@
                                   <ul class="widget-category-listings">
                                       <li><a href="index.php">Accueil</a></li>
                                       <li><a href="articles.php">Articles</a></li>
-                                      <li><a href="#">Formations</a></li>
+                                      <li><a href="formations.php">Formations</a></li>
                                       <li><a href="#">Contact</a></li>
                                   </ul>
                               </div>
@@ -49,7 +49,7 @@
                               <div class="widget-content">
                                   <div class="widget-posts">
                                       <div class="post-title">
-                                          <h5><a href="#">Contrôler l'Éjaculation et Durer Longtemps au Lit</a></h5>
+                                          <h5><a href="1304202001.php">Contrôler l'Éjaculation et Durer Longtemps au Lit</a></h5>
                                       </div>
                                       <div class="posted-date">
                                           <span><a href="#">13 Avril 2020</a></span>

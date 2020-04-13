@@ -49,9 +49,3 @@
         </div>
       </div>
     </nav>
-
-    <div id="bg">
-
-        <img src="images/caro1.jpg" id="caro" class="img-fluid">
-
-    </div>
