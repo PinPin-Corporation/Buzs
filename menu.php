@@ -55,7 +55,7 @@
           <a class="nav-item nav-link active" href="index.php">Accueil <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="articles.php">Articles</a>
           <a class="nav-item nav-link" href="formations.php">Formations</a>
-          <a class="nav-item nav-link" href="#">Contacts</a>
+          <a class="nav-item nav-link" href="contact.php">Contacts</a>
         </div>
       </div>
     </nav>

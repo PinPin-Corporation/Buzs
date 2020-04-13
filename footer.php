@@ -34,7 +34,7 @@
                                       <li><a href="index.php">Accueil</a></li>
                                       <li><a href="articles.php">Articles</a></li>
                                       <li><a href="formations.php">Formations</a></li>
-                                      <li><a href="#">Contact</a></li>
+                                      <li><a href="contact.php">Contact</a></li>
                                   </ul>
                               </div>
                           </div>
