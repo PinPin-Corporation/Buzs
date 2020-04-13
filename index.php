@@ -39,7 +39,8 @@
     <?php
         try
         {
-            $bdd = new PDO('mysql:host=localhost;dbname=queen1358445;charset=utf8', 'queen1358445', '1ea7cfbifv');
+            $bdd = new PDO('mysql:host=185.98.131.109;dbname=queen1358445;charset=utf8', 'queen1358445', '1ea7cfbifv'
+        );
             $reponse = $bdd->query('SELECT * FROM Articles ORDER BY Date DESC');
             $donnees = $reponse->fetch();
             ?>
