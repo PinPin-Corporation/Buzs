@@ -31,3 +31,124 @@
 .Minor_Content_Left img{
     max-width: 100%;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 200px;
+    
+
+}
+
+#logo {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#reseau {
+
+    height:65px;
+    width: 100%;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+#insta {
+    float: right;
+    border-radius: 35px;
+    width: 35px;
+    margin-right: 150px;
+    margin-top: 10px;
+
+}
+
+#insta:hover {
+
+    background-color: rgb(201, 147, 180);
+}
+
+#reseau img {
+    border: solid 1px  rgb(212, 212, 212);
+    border-radius: 35px;
+    padding: 5px;
+    width: 35px;
+    transition-duration:0.7s;
+
+} 
+
+#reseau img:hover {
+
+    cursor:pointer;
+    transition-delay:0s;
+    transition-duration:0.7s;
+    transition-property:all;
+    transition-timing-function:ease;
+    vertical-align:middle;
+    filter: invert(100%);
+    border: solid 1px  rgb(212, 212, 212);
+    border-radius: 35px;
+    padding: 5px;
+    width: 35px;
+
+} 
+
+nav {
+   border-top: solid 1px rgb(212, 212, 212);
+   border-bottom: solid 1px rgb(212, 212, 212);
+   text-align: center;
+}
+
+#items {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    font-size: 18px;}
+
+nav a
+{
+
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#caro {
+    width: 43%;
+    margin: 0 auto;
+}
+
+#bg {
+    background-color: #363636;
+    text-align: center;
+}
+
+#main {
+    height: 300px;
+}
+#color {
+    background-color: #141414;
+}
+footer {
+ color: rgb(212, 212, 212);
+ font-family: 'Old Standard TT', serif;
+ background: url(https://www.photoblog.com/learn/wp-content/uploads/2018/12/back-to-camera-man-1209947-1024x683.jpg) center no-repeat;
+}
+
+#about {
+    background-color: red;
+    width: 33%;
+}
+
+#article {
+    background-color:green;
+    width: 33%;
+}
+
+#navigation {
+
+    background-color:yellow;
+    width: 33%;
+}
