@@ -49,26 +49,26 @@
                               <div class="widget-content">
                                   <div class="widget-posts">
                                       <div class="post-title">
-                                          <h5><a href="1304202001.php">Contrôler l'Éjaculation et Durer Longtemps au Lit</a></h5>
+                                          <h5><a class="populaire_a" href="1304202001.php">Contrôler l'Éjaculation et Durer Longtemps au Lit</a></h5>
                                       </div>
                                       <div class="posted-date">
-                                          <span><a href="#">13 Avril 2020</a></span>
+                                          <span><a class="populaire_a" href="#">13 Avril 2020</a></span>
                                       </div>
                                   </div>
                                   <div class="widget-posts">
                                       <div class="post-title">
-                                          <h5><a href="#">Le guide pour devenir le meilleur coup du siècle</a></h5>
+                                          <h5><a class="populaire_a" href="#">Le guide pour devenir le meilleur coup du siècle</a></h5>
                                       </div>
                                       <div class="posted-date">
-                                          <span><a href="#">13 Avril 2020</a></span>
+                                          <span><a class="populaire_a" href="#">13 Avril 2020</a></span>
                                       </div>
                                   </div>
                                   <div class="widget-posts">
                                       <div class="post-title">
-                                          <h5><a href="#">Comment séduire par message?</a></h5>
+                                          <h5><a class="populaire_a" href="#">Comment séduire par message?</a></h5>
                                       </div>
                                       <div class="posted-date">
-                                          <span><a href="#">13 Avril 2020</a></span>
+                                          <span><a class="populaire_a" href="#">13 Avril 2020</a></span>
                                       </div>
                                   </div>
                               </div>

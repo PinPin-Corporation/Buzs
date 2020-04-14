@@ -158,12 +158,13 @@ footer {
     font-family: 'Old Standard TT', serif;
 }
 
-a, a:hover, a:visited, a:focus {
+.populaire_a, .populaire_a:hover, .populaire_a:visited, .populaire_a:focus {
     text-decoration: none !important;
     color: white;
+    transition-duration: 0.3s;
 }
 
-a:hover {
+.populaire_a:hover {
     color: rgb(151, 39, 39);
 }
 
