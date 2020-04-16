@@ -8,7 +8,7 @@
     </div>
       <script type="text/javascript">
         $(window).on('load',function(){
-            $('#exampleModal').modal('show');
+            //$('#exampleModal').modal('show');
         });
     </script>
 <!-- Modal -->
@@ -37,58 +37,62 @@
 </div>
 </div>
 </div>
-    <div class="container">
-        <?php
-            try
-            {
-                $bdd = new PDO('mysql:host=localhost;dbname=QueenSeduction;charset=utf8', 'root', '');
-                $reponse = $bdd->query('SELECT * FROM Articles ORDER BY Date DESC');
-                $donnees = $reponse->fetch();
-                ?>
-                <div style="margin-top: 20px; margin-bottom: 20px;">
-                    <div id="Major_Content">
-                            <div id="Major_Content_Left">
-                                <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
-                            </div>
-                            <div id="Major_Content_Right">
-                                <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
-                                <p><?php echo $donnees['description'];?></p>
-                            </div>
-                    </div>
+    <?php
+        try
+        {
+            $bdd = new PDO('mysql:host=localhost;dbname=QueenSeduction;charset=utf8', 'root', '');
+            $reponse = $bdd->query('SELECT * FROM Articles ORDER BY Date DESC');
+            $donnees = $reponse->fetch();
+            ?>
+            <div style="width: 100%; height: 400px; background-color: red; margin-top: 20px;">
+                <div style="float: left; width: 50%; overflow: hidden; height: 100%;">
+                    <img style="max-width: 100%;" src="images/femme.jpg">
                 </div>
-                <?php
-
-                while ($donnees = $reponse->fetch())
-                {
-                ?>
+                <div div="float: right; width: 50%; height: 50%;">
+                    <h1>
+                        Contrôler l'Éjaculation et Durer Longtemps au Lit
+                    </h1>
+                    <p>
+                        Il n’y a pas de remède miracle pour durer plus longtemps au lit ! Être plus performant au lit ne peut ...
+                    </p>
+                </div>
+            </div>
+            <!--<div style="margin-top: 20px; margin-bottom: 20px;" class="w-100">
                 <div class="Minor_Content">
-                    <div class="Minor_Content_Left">
-                        <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
-                    </div>
-                    <div class="Minor_Content_Right">
-                        <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
-                        <p><?php echo $donnees['description'];?></p>
-                    </div>
+                        <div id="Minor_Content_Left">
+                            <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img class="img" src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
+                        </div>
+                        <div id="Minor_Content_Right">
+                            <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
+                            <p><?php echo $donnees['description'];?></p>
+                        </div>
                 </div>
-                <?php
-                }
+            </div>
+            -->
+            <?php
 
-                $reponse->closeCursor();
-                }
-            catch (Exception $e)
+            while ($donnees = $reponse->fetch())
             {
-                    die('Erreur : ' . $e->getMessage());
-            } 
-        ?>
-        <div class="Minor_Content" style="margin-bottom : 20px; margin-top: 20px;">
-            <div class="Minor_Content_Left">
-                <a><img src="images/femme_fatale.jpg"></a>
+            ?>
+            <!--<div class="Minor_Content">
+                <div class="Minor_Content_Left">
+                    <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
+                </div>
+                <div class="Minor_Content_Right">
+                    <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
+                    <p><?php echo $donnees['description'];?></p>
+                </div>
             </div>
-            <div class="Minor_Content_Right">
-                <h1>Contrôler l'Éjaculation et Durer Longtemps au Lit</h1>
-                <p>Il n’y a pas de remède miracle pour durer plus longtemps au lit ! Être plus performant au lit ne peut ...</p>
-            </div>
-        </div>
-    </div>
-    <div id="color">
+        -->
+            <?php
+            }
+
+            $reponse->closeCursor();
+            }
+        catch (Exception $e)
+        {
+                die('Erreur : ' . $e->getMessage());
+        } 
+    ?>
+    
 <?php include('footer.php'); ?>

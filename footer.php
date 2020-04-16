@@ -1,4 +1,5 @@
-<footer class="general-footer">
+<div id="color">
+    <footer class="general-footer">
       <div class="footer-mask"></div>
       <div class="footer-inner">
           <div class="container">
@@ -89,7 +90,7 @@
           </div>
       </div>
   </footer>
-    </div>
+</div>
   </body>
 
 </html>
