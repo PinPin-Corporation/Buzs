@@ -18,7 +18,11 @@
 }
 
 .Minor_Content{
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
     border-top: 1px solid grey;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 

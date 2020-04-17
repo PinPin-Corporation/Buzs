@@ -47,34 +47,15 @@
             ?>
             <div style="width: 100%; height: 400px; margin-top: 20px;">
                 <div style="float: left; width: 50%; overflow: hidden; height: 100%;">
-                    <!--<img style="max-width: 100%;" src="images/femme.jpg">-->
                     <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img class="img-fluid" src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
                 </div>
                 <div div="float: right; width: 50%; height: 50%;">
-                    <!--<h1>
-                        Contrôler l'Éjaculation et Durer Longtemps au Lit
-                    </h1>
-                    <p>
-                        Il n’y a pas de remède miracle pour durer plus longtemps au lit ! Être plus performant au lit ne peut ...
-                    </p>-->
                     <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
                     <p><?php echo $donnees['description'];?></p>
                 </div>
             </div>
-            <!--<div style="margin-top: 20px; margin-bottom: 20px;" class="w-100">
-                <div class="Minor_Content">
-                        <div id="Minor_Content_Left">
-                            <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img class="img" src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
-                        </div>
-                        <div id="Minor_Content_Right">
-                            <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
-                            <p><?php echo $donnees['description'];?></p>
-                        </div>
-                </div>
-            </div>
-            -->
             <table style="width: 100%; margin-bottom: 20px;">
-                <tr style="margin-top: 0px;">
+                <tr>
                     <td>
                         <?php
                         while ($donnees = $reponse->fetch())

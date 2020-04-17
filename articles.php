@@ -1,4 +1,5 @@
 <?php include('menu.php');?>
+<div class="container">
 <?php
         try
         {
@@ -22,10 +23,10 @@
             {
             ?>
             <div class="Minor_Content">
-                    <div class="Minor_Content_Left">
-                        <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
+                    <div class="w-50 float-left">
+                        <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img  class="img-fluid"src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
                     </div>
-                    <div class="Minor_Content_Right">
+                    <div class="w-50 float-right">
                         <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
                         <p><?php echo $donnees['description'];?></p>
                     </div>
@@ -40,4 +41,5 @@
                 die('Erreur : ' . $e->getMessage());
         } 
     ?>
+</div>
 <?php include('footer.php');?>
