@@ -37,6 +37,7 @@
 </div>
 </div>
 </div>
+<div class="container">
     <?php
         try
         {
@@ -44,17 +45,20 @@
             $reponse = $bdd->query('SELECT * FROM Articles ORDER BY Date DESC');
             $donnees = $reponse->fetch();
             ?>
-            <div style="width: 100%; height: 400px; background-color: red; margin-top: 20px;">
+            <div style="width: 100%; height: 400px; margin-top: 20px;">
                 <div style="float: left; width: 50%; overflow: hidden; height: 100%;">
-                    <img style="max-width: 100%;" src="images/femme.jpg">
+                    <!--<img style="max-width: 100%;" src="images/femme.jpg">-->
+                    <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img class="img-fluid" src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
                 </div>
                 <div div="float: right; width: 50%; height: 50%;">
-                    <h1>
+                    <!--<h1>
                         Contrôler l'Éjaculation et Durer Longtemps au Lit
                     </h1>
                     <p>
                         Il n’y a pas de remède miracle pour durer plus longtemps au lit ! Être plus performant au lit ne peut ...
-                    </p>
+                    </p>-->
+                    <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
+                    <p><?php echo $donnees['description'];?></p>
                 </div>
             </div>
             <!--<div style="margin-top: 20px; margin-bottom: 20px;" class="w-100">
@@ -69,30 +73,34 @@
                 </div>
             </div>
             -->
-            <?php
-
-            while ($donnees = $reponse->fetch())
-            {
-            ?>
-            <!--<div class="Minor_Content">
-                <div class="Minor_Content_Left">
-                    <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
-                </div>
-                <div class="Minor_Content_Right">
-                    <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
-                    <p><?php echo $donnees['description'];?></p>
-                </div>
-            </div>
-        -->
-            <?php
-            }
-
-            $reponse->closeCursor();
-            }
-        catch (Exception $e)
-        {
-                die('Erreur : ' . $e->getMessage());
-        } 
-    ?>
-    
+            <table style="width: 100%; margin-bottom: 20px;">
+                <tr style="margin-top: 0px;">
+                    <td>
+                        <?php
+                        while ($donnees = $reponse->fetch())
+                        {
+                        ?>
+                        <div style="border-top: 1px solid grey; ">
+                            <div class="Minor_Content_Left">
+                                <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img class="img-fluid" src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
+                            </div>
+                            <div class="Minor_Content_Right">
+                                <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
+                                <p><?php echo $donnees['description'];?></p>
+                            </div>
+                        </div>
+                            <?php
+                            }       
+                            $reponse->closeCursor();
+                            }
+                            catch (Exception $e)
+                            {
+                                    die('Erreur : ' . $e->getMessage());
+                            } 
+                        ?>
+                    </td>
+                    <td style="width: 300px;">pub</td>
+                </tr>
+            </table>  
+</div>  
 <?php include('footer.php'); ?>
