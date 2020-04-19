@@ -1,20 +1,27 @@
 <?php include("menu.php"); ?>
 
 <div class="container" style="max-width: 1000px;">
-  <h1 class="sticky">Analyser le body language d'une femme</h1>
+  <h1 class="sticky">Savoir si vous l'interesser</h1>
     <div id="introduction">
         <img src="images/caro3.jpg" class="w-100">
         <p>
+
         </p>
     </div>
     <section>
-      <h1 class="Titre_section">Signes d'interet</h1>
+      <h1 class="Titre_section">Son regard</h1>
       <p class="paragraphe">
       </p>
     </section>
 
     <section>
-        <h1 class="Titre_section">Signes de désinterêt</h1>
+        <h1 class="Titre_section">Ses lèvres</h1>
+        <p class="paragraphe">
+        </p>
+      </section>
+
+      <section>
+        <h1 class="Titre_section">Son corps</h1>
         <p class="paragraphe">
         </p>
       </section>
