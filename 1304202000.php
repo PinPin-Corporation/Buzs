@@ -29,6 +29,7 @@
 
     <section>
         <h1 class="Titre_section">Complémenter votre style</h1>
+        <p class="paragraphe">
         Le vêtements jouent un grand rôle mais il n’y a pas qu’eu qui participe à faire un style unique
         qui fera que l’on vous remarquera dans la rue (dans le bon sens). Voici une liste d’accessoires que 
         vous pouvez ajouter à votre style vestimentaire : une montre, des bracelets, une chaîne, des bagues, 
@@ -38,8 +39,6 @@
         quand même le plus important c’est tout ce qui se trouve vers le visage. Essayer de tester si un style de barbe
         vous va bien, tenter de nouvelles coupes de cheveux qui va avec votre force de visage. Vous pouvez aussi 
         colorer vos cheveux ou une partie cela renforcera l’effet unique de votre style. 
-        <p class="paragraphe">
-
         </p>
     </section>
 

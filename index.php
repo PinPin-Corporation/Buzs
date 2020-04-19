@@ -45,8 +45,8 @@
             $reponse = $bdd->query('SELECT * FROM Articles ORDER BY Date DESC');
             $donnees = $reponse->fetch();
             ?>
-            <div style="width: 100%; height: 400px; margin-top: 20px;">
-                <div style="float: left; width: 50%; overflow: hidden; height: 100%;">
+            <div style="width: 100%; margin-top: 20px; display: inline-block">
+                <div style="float: left; width: 50%;">
                     <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img class="img-fluid" src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
                 </div>
                 <div div="float: right; width: 50%; height: 50%;">
@@ -54,18 +54,18 @@
                     <p><?php echo $donnees['description'];?></p>
                 </div>
             </div>
-            <table style="width: 100%; margin-bottom: 20px;">
+            <table style="width: 100%; margin-bottom: 20px; margin-top: 20px;">
                 <tr>
                     <td>
                         <?php
                         while ($donnees = $reponse->fetch())
                         {
                         ?>
-                        <div style="border-top: 1px solid grey; ">
+                        <div style="border-top: 1px solid grey; display: inline-block; margin-bottom: 20px;">
                             <div class="w-50 float-left">
                                 <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><img class="img-fluid" src=<?php echo '"images/' . $donnees['image'] .'"'?>></a>
                             </div>
-                            <div class="W-50 float-right">
+                            <div class="w-50 float-right">
                                 <a href=<?php echo '"' . $donnees['id'] . '.php"'?>><h1><?php echo $donnees['nom']; ?></h1></a>
                                 <p><?php echo $donnees['description'];?></p>
                             </div>
