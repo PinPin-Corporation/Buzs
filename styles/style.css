@@ -233,6 +233,7 @@ h1.sticky{
 
 #introduction p{
     font-size: 20px;
+    line-height: 2em;
 }
 
 section{
@@ -247,4 +248,5 @@ section h1{
 
 section p{
     font-size: 20px;
+    line-height: 2em;
 }
